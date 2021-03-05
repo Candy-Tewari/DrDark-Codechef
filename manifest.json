@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "CodeChef DrDark",
+    "version": "1.0",
+
+    "description": "This extension gives you a dark theme for codechef. Apart from that, it also gives the input copy button. Also current rank and time left in a contest question when you are inside a question.",
+
+    "content_scripts": [
+        {
+            "run_at": "document_end",
+            "matches": ["*://www.codechef.com/*"],
+            "js": ["codechef_background.js"]
+        }
+    ]
+}
